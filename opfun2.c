@@ -1,4 +1,3 @@
-
 #include "monty.h"
 
 /**
@@ -23,9 +22,9 @@ void swap(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * add - add the top two elements of the stack
+ * add - add The Top 2 Elements of The stack
  * @stack: Double linked list
- * @line_number: File line execution
+ * @line_number: File line Execution
  */
 void add(stack_t **stack, unsigned int line_number)
 {
@@ -41,9 +40,9 @@ void add(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * sub - substract the top two elements of the stack
- * @stack: Double linked list
- * @line_number: Line counter
+ * sub - substract The Top 2 Elements of The Stack
+ * @stack: Double Linked List
+ * @line_number: Line Counter
  */
 void sub(stack_t **stack, unsigned int line_number)
 {
@@ -59,9 +58,9 @@ void sub(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * divi - divide the top two elements of the stack
+ * divi - divide the Top 2 elements of the stack
  * @stack: Double linked list
- * @line_number: File line counter
+ * @line_number: File line Counter
  */
 void divi(stack_t **stack, unsigned int line_number)
 {

@@ -15,12 +15,12 @@
 
 /**
  * struct stack_s - Doubly linked list representation of a stack (or queue)
- * @n: Integer
- * @prev: Points to the previous element of the stack (or queue)
- * @next: Points to the next element of the stack (or queue)
+ * @n: Int
+ * @prev: Points To The Previous Element of The Stack (or queue)
+ * @next: Points To The Next Element of The Stack (or queue)
  *
- * Description: Doubly linked list node structure
- * for stack, queues, LIFO, FIFO
+ * Description: Doubly linked list Node struc
+ * for Stack, Queues, LIFO, FIFO
  */
 typedef struct stack_s
 {
@@ -30,12 +30,12 @@ typedef struct stack_s
 } stack_t;
 
 /**
- * struct instruction_s - Opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
+ * struct instruction_s - Opcode & its Function
+ * @opcode: The opcode
+ * @f: Function to Handle The opcode
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO
+ * for stack, Queues, LIFO, FIFO
  */
 typedef struct instruction_s
 {
@@ -45,14 +45,14 @@ typedef struct instruction_s
 
 
 /**
- * struct glob_var - golbal variables
- * @file: file name
- * @buff: Getline buffer
- * @tmp: Getline counter
+ * struct glob_var - G var
+ * @file: file Name
+ * @buff: Getline Buffer
+ * @tmp: Getline Counter
  * @dict: instruction dictionary
- * @head: pointer to list
+ * @head: pointer To List
  * @line_number: Stores file current line
- * @MODE: Program configuration stack or queue
+ * @MODE: Program Configuration stack or queue
  */
 typedef struct glob_var
 {
@@ -68,42 +68,31 @@ typedef struct glob_var
 
 extern vars var;
 
-/* ================================================================= */
 /* man_file.c */
-/* ================================================================= */
 int start_vars(vars *var);
 instruction_t *create_instru();
 int call_funct(vars *var, char *opcode);
 void free_all(void);
 int _isdigit(char *string);
 
-/* ================================================================= */
 /* op_funct.c */
-/* ================================================================= */
 void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
-
-/* ================================================================= */
 /* op_funct_2.c */
-/* ================================================================= */
 void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 void divi(stack_t **stack, unsigned int line_number);
 
-/* ================================================================= */
 /* op_funct_3.c */
-/* ================================================================= */
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
 
-/* ================================================================= */
 /* op_funct_4.c */
-/* ================================================================= */
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
 void stack(stack_t **stack, unsigned int line_number);

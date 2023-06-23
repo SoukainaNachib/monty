@@ -3,7 +3,7 @@
 /**
  * mul - s
  * @stack: Double linked list
- * @line_number: File line execution
+ * @line_number: File line Execution
  */
 void mul(stack_t **stack, unsigned int line_number)
 {
@@ -22,7 +22,7 @@ void mul(stack_t **stack, unsigned int line_number)
 /**
  * mod - s
  * @stack: Double linked list
- * @line_number: File line execution
+ * @line_number: File line Execution
  */
 void mod(stack_t **stack, unsigned int line_number)
 {
@@ -46,7 +46,7 @@ void mod(stack_t **stack, unsigned int line_number)
 /**
  * pchar - s
  * @stack: Double linked list
- * @line_number: File line execution
+ * @line_number: File line Execution
  */
 void pchar(stack_t **stack, unsigned int line_number)
 {
@@ -69,7 +69,7 @@ void pchar(stack_t **stack, unsigned int line_number)
 /**
  * pstr - s
  * @stack: Double linked list
- * @line_number: File line execution
+ * @line_number: File line Execution
  */
 void pstr(stack_t **stack, unsigned int line_number)
 {

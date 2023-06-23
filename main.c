@@ -1,13 +1,12 @@
-
 #include "monty.h"
 
 vars var;
 
 /**
  * main - Start LIFO, FILO program
- * @ac: Number of arguments
- * @av: Pointer containing arguments
- * Return: 0 Success, 1 Failed
+ * @ac: Num of Arg
+ * @av: Pointer Containing Arg
+ * Return: 0 success, 1 failed
  */
 int main(int ac, char **av)
 {
